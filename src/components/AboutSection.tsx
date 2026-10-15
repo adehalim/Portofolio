@@ -111,7 +111,7 @@ export function AboutSection() {
                 </div>
                 <div className="flex justify-between py-1 border-b border-zinc-100/60 dark:border-zinc-800/60">
                   <span className="text-zinc-500 dark:text-zinc-400">Status Akademik</span>
-                  <span className="font-semibold text-zinc-800 dark:text-zinc-200">Semester 7 (Aktif)</span>
+                  <span className="font-semibold text-zinc-800 dark:text-zinc-200">Semester 7 (Angkatan 2023)</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-zinc-100/60 dark:border-zinc-800/60">
                   <span className="text-zinc-500 dark:text-zinc-400">Perguruan Tinggi</span>
@@ -119,7 +119,7 @@ export function AboutSection() {
                 </div>
                 <div className="flex justify-between py-1 border-b border-zinc-100/60 dark:border-zinc-800/60">
                   <span className="text-zinc-500 dark:text-zinc-400">Praktik Lapangan</span>
-                  <span className="font-semibold text-zinc-800 dark:text-zinc-200 text-right">MTsN 2 Solok</span>
+                  <span className="font-semibold text-zinc-800 dark:text-zinc-200 text-right">MTsN 2 Solok (Jul — Des)</span>
                 </div>
                 <div className="flex justify-between py-1">
                   <span className="text-zinc-500 dark:text-zinc-400">Domisili</span>

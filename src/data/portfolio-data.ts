@@ -85,22 +85,22 @@ export const PORTFOLIO_DATA = {
     arabicQuote: "العِلْمُ بِالتَّعَلُّمِ وَالإِبْدَاعُ بِالتَّطْبِيقِ",
     arabicTranslation: "Ilmu diraih dengan belajar, dan kreativitas lahir dari penerapan nyata.",
     shortBio:
-      "Mahasiswa semester 7 Pendidikan Bahasa Arab di UIN Imam Bonjol Padang yang sedang mengabdi di MTsN 2 Solok. Menaruh minat besar pada rekayasa web, teknologi edukasi modern, dan pembuatan antarmuka digital yang intuitif.",
+      "Mahasiswa semester 7 Pendidikan Bahasa Arab (Angkatan 2023) di UIN Imam Bonjol Padang yang sedang menuntaskan Praktik Lapangan (PL) di MTsN 2 Solok (Juli — Desember). Menaruh minat besar pada rekayasa web, teknologi edukasi modern, dan pembuatan antarmuka digital yang intuitif.",
     aboutLong: `Saya percaya bahwa pembelajaran bahasa klasik seperti Bahasa Arab dapat menjadi jauh lebih menarik, adaptif, dan inklusif bila diintegrasikan dengan teknologi web modern.
 
-Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakultas Tarbiyah dan Keguruan, UIN Imam Bonjol Padang, sekaligus menjalankan pengabdian pengajaran di MTsN 2 Solok. Di luar ruang kelas akademik, saya aktif mengeksplorasi ekosistem web modern (Next.js, TypeScript, Tailwind CSS) dan mendesain solusi digital yang memecahkan masalah pembelajaran nyata.`,
+Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab (Angkatan 2023), Fakultas Tarbiyah dan Keguruan, UIN Imam Bonjol Padang, sekaligus menjalankan Praktik Lapangan (PL) periode Juli hingga Desember di MTsN 2 Solok. Di luar ruang kelas akademik, saya aktif mengeksplorasi ekosistem web modern (Next.js, TypeScript, Tailwind CSS) dan mendesain solusi digital yang memecahkan masalah pembelajaran nyata.`,
     email: "adehalim815@gmail.com",
     cvLink: "#resume",
     stats: [
       {
         label: "Semester 7",
-        value: "UIN IB Padang",
-        detail: "Pendidikan Bahasa Arab",
+        value: "Angkatan '23",
+        detail: "PBA UIN IB Padang",
       },
       {
         label: "MTsN 2 Solok",
-        value: "Pengabdian",
-        detail: "Praktik Pengajaran Nyata",
+        value: "Praktik Lapangan",
+        detail: "Juli — Desember",
       },
       {
         label: "DEMA Kampus",
@@ -152,20 +152,21 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
     {
       institution: "UIN Imam Bonjol Padang",
       degree: "S1 Pendidikan Bahasa Arab (Semester 7)",
-      period: "2021 — Sekarang",
+      period: "2023 — Sekarang",
       location: "Padang, Sumatera Barat",
       description:
         "Mendalami tata bahasa Arab (Nahwu & Shorof), metodologi pedagogi bahasa asing, pengembangan kurikulum madrasah, serta inovasi media instruksional.",
       highlights: [
+        "Mahasiswa Angkatan 2023 yang saat ini aktif menempuh Semester 7",
+        "Menjalankan Praktik Lapangan (PL) di MTsN 2 Solok periode Juli — Desember",
         "Fokus riset & studi integrasi teknologi pada pengajaran mufrodat & qawa'id",
         "Aktif dalam kepengurusan ormawa tingkat fakultas dan universitas (DEMA)",
-        "Sedang menyelesaikan program praktik pengabdian lapangan (PPL) di madrasah",
       ],
     },
     {
       institution: "MAN 2 Padang Panjang",
       degree: "Madrasah Aliyah Negeri (MAN) Unggulan",
-      period: "2018 — 2021",
+      period: "2020 — 2023",
       location: "Padang Panjang, Sumatera Barat",
       description:
         "Membangun pondasi literasi bahasa Arab, keilmuan Islam terpadu, dan kepemimpinan organisasi santri madrasah berasrama.",
@@ -177,7 +178,7 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
     {
       institution: "MTsN 6 Model Padang",
       degree: "Madrasah Tsanawiyah Negeri Model",
-      period: "2015 — 2018",
+      period: "2017 — 2020",
       location: "Padang, Sumatera Barat",
       description:
         "Menempa minat awal terhadap sains, teknologi komputer dasar, dan pengenalan kaidah dasar bahasa Arab.",
@@ -189,7 +190,7 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
     {
       institution: "SDN 26 ATT Padang",
       degree: "Sekolah Dasar Negeri",
-      period: "2009 — 2015",
+      period: "2011 — 2017",
       location: "Padang, Sumatera Barat",
       description:
         "Pondasi pendidikan dasar karakter, literasi, dan kepemimpinan awal.",
@@ -202,13 +203,13 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
 
   experience: [
     {
-      role: "Praktik Pengabdian & Pendidik Lapangan",
+      role: "Praktik Lapangan (PL) Pendidikan Bahasa Arab",
       organization: "MTsN 2 Solok",
-      period: "2024 — Sekarang",
+      period: "Juli — Desember (Semester Ganjil)",
       location: "Solok, Sumatera Barat",
       type: "Pengabdian",
       description:
-        "Menjalankan pengabdian pengajaran bahasa Arab bagi siswa madrasah tsanawiyah, merancang rencana pelaksanaan pembelajaran (RPP), serta menerapkan media pembelajaran digital interaktif.",
+        "Menjalankan Praktik Lapangan (PL) pengajaran bahasa Arab bagi siswa madrasah tsanawiyah selama semester ganjil, menyusun modul ajar & rencana pelaksanaan pembelajaran (RPP), serta menerapkan media pembelajaran digital interaktif.",
       achievements: [
         "Mengembangkan materi latihan kosakata interaktif yang meningkatkan antusiasme siswa di kelas",
         "Membimbing siswa dalam penguasaan pelafalan (makharijul huruf) dan tata bahasa praktis",
@@ -218,7 +219,7 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
     {
       role: "Pengurus Dewan Eksekutif Mahasiswa (DEMA)",
       organization: "DEMA UIN Imam Bonjol Padang",
-      period: "Semester 4 — 5 (2023 — 2024)",
+      period: "2024 — 2025 (Semester 4 — 5)",
       location: "Padang, Sumatera Barat",
       type: "Organisasi",
       description:
@@ -232,7 +233,7 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
     {
       role: "Koordinator & Tim Kepanitiaan Kampus",
       organization: "Berbagai Kepanitiaan Event UIN Imam Bonjol",
-      period: "2021 — Sekarang",
+      period: "2023 — Sekarang",
       location: "Padang, Sumatera Barat",
       type: "Kepanitiaan",
       description:
@@ -412,7 +413,7 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
       author: "Pendidik & Pembimbing Lapangan",
       role: "Keluarga Besar MTsN 2 Solok",
       organization: "MTsN 2 Solok",
-      context: "Pengabdian & PPL Semester 7",
+      context: "Praktik Lapangan (PL) Semester Ganjil",
     },
     {
       quote:
@@ -420,7 +421,7 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab, Fakul
       author: "Rekan Pengurus DEMA",
       role: "Dewan Eksekutif Mahasiswa",
       organization: "UIN Imam Bonjol Padang",
-      context: "Kepengurusan Periode Semester 4-5",
+      context: "Kepengurusan DEMA Periode Semester 4-5",
     },
     {
       quote:
