@@ -87,3 +87,14 @@ h1, h2, h3, h4, .font-display {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border);
 }
+
+/* Print styling for resume */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, .bg-grid-pattern, [aria-hidden="true"] {
+    display: none !important;
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 import { PORTFOLIO_DATA } from "@/data/portfolio-data";
 import { Toast } from "./Toast";
 import {
@@ -10,6 +11,7 @@ import {
   Send,
   ArrowUpRight,
   MapPin,
+  Clock,
 } from "lucide-react";
 import {
   GithubIcon,
@@ -57,7 +59,13 @@ export function ContactSection() {
     <section id="contact" className="py-20 border-t border-zinc-200/80 dark:border-zinc-800/80 relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Contact Hero Container */}
-        <div className="relative rounded-3xl p-8 sm:p-12 border border-zinc-200 dark:border-zinc-800 bg-gradient-to-b from-white to-zinc-50/50 dark:from-zinc-900 dark:to-zinc-950/80 backdrop-blur-xl shadow-xl overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="relative rounded-3xl p-8 sm:p-12 border border-zinc-200 dark:border-zinc-800 bg-gradient-to-b from-white to-zinc-50/50 dark:from-zinc-900 dark:to-zinc-950/80 backdrop-blur-xl shadow-xl overflow-hidden"
+        >
           {/* Subtle Ambient Background Light */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-blue-600/10 dark:bg-blue-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
@@ -98,7 +106,7 @@ export function ContactSection() {
                 <div className="flex items-center gap-2 w-full sm:w-auto">
                   <button
                     onClick={handleCopyEmail}
-                    className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-semibold text-zinc-800 dark:text-zinc-200 transition-colors shadow-xs cursor-pointer"
+                    className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-semibold text-zinc-800 dark:text-zinc-200 transition-colors shadow-xs cursor-pointer active:scale-95"
                     title="Salin ke clipboard"
                   >
                     {copied ? (
@@ -116,7 +124,7 @@ export function ContactSection() {
 
                   <a
                     href={`mailto:${profile.email}`}
-                    className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold transition-colors shadow-sm"
+                    className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold transition-colors shadow-sm active:scale-95"
                   >
                     <Send className="w-3.5 h-3.5" />
                     <span>Kirim Email</span>
@@ -125,7 +133,7 @@ export function ContactSection() {
               </div>
 
               {/* Location & Status note */}
-              <div className="flex items-center gap-4 text-xs text-zinc-500 dark:text-zinc-400">
+              <div className="flex flex-wrap items-center gap-4 text-xs text-zinc-500 dark:text-zinc-400">
                 <span className="flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-blue-500" />
                   <span>{profile.domicile}</span>
@@ -134,6 +142,11 @@ export function ContactSection() {
                 <span className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
                   <span>Tanggapan Cepat</span>
+                </span>
+                <span>•</span>
+                <span className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-zinc-400" />
+                  <span>WIB (UTC+7)</span>
                 </span>
               </div>
             </div>
@@ -173,7 +186,7 @@ export function ContactSection() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <Toast
