@@ -13,6 +13,7 @@ import {
   Calendar,
   Volume2,
   FileText,
+  Sparkles,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 
@@ -132,9 +133,9 @@ export function ProjectsSection() {
           </div>
         );
 
-      case "kalam-tech-sandbox":
+      case "kalam-playground":
         return (
-          <div className="w-full rounded-2xl bg-gradient-to-br from-cyan-900/10 via-zinc-900/40 to-blue-950/20 border border-cyan-500/20 p-4 sm:p-5 flex flex-col justify-between space-y-3">
+          <div className="w-full rounded-2xl bg-gradient-to-br from-emerald-950/20 via-zinc-900/40 to-teal-950/30 border border-emerald-500/20 p-4 sm:p-5 flex flex-col justify-between space-y-3">
             {/* Mock browser top bar */}
             <div className="flex items-center justify-between pb-2 border-b border-zinc-200/40 dark:border-zinc-800">
               <div className="flex items-center gap-1.5">
@@ -143,43 +144,51 @@ export function ProjectsSection() {
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/80" />
               </div>
               <span className="text-[10px] font-mono text-zinc-400">
-                kalam-sandbox.dev / tashkeel-engine
+                kalam-playground.app / mufradat-lab
               </span>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-400 font-semibold">
-                Unicode Tool
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-semibold">
+                React 19 • Level 1 مُبْتَدِئ
               </span>
             </div>
 
-            {/* Split comparison preview */}
-            <div className="grid grid-cols-2 gap-2 text-right">
-              <div className="p-3 rounded-xl bg-white/70 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 space-y-1">
-                <span className="text-[9px] font-mono text-zinc-400 block text-left uppercase">
-                  Dengan Harakat
+            {/* Interactive Reading / Word Inspector preview */}
+            <div className="p-3.5 rounded-xl bg-white/80 dark:bg-zinc-900/90 border border-zinc-200/80 dark:border-zinc-800 space-y-2.5">
+              <div className="flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" /> Teks Bacaan &amp; Klik Kata
                 </span>
-                <p className="font-arabic text-lg font-bold text-zinc-900 dark:text-white" dir="rtl">
-                  العِلْمُ نُورٌ
-                </p>
-                <span className="text-[9px] font-mono text-cyan-500 block text-left">
-                  12 Karakter
+                <span className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 font-mono text-[9px]">
+                  مُشَكَّلٌ (Harakat Penuh)
                 </span>
               </div>
-              <div className="p-3 rounded-xl bg-white/70 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 space-y-1">
-                <span className="text-[9px] font-mono text-zinc-400 block text-left uppercase">
-                  Tanpa Harakat (Stripped)
-                </span>
-                <p className="font-arabic text-lg font-bold text-emerald-600 dark:text-emerald-400" dir="rtl">
-                  العلم نور
-                </p>
-                <span className="text-[9px] font-mono text-emerald-500 block text-left">
-                  8 Karakter (Bersih)
+
+              {/* Word Card Interactive */}
+              <div className="flex items-center justify-between p-2.5 rounded-lg bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200/60 dark:border-emerald-800/50">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-7 h-7 rounded-md bg-emerald-600 text-white flex items-center justify-center shadow-xs">
+                    <Volume2 className="w-3.5 h-3.5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-medium text-emerald-800 dark:text-emerald-300">
+                      Jenis: Isim • Akar: ك-ت-ب
+                    </span>
+                    <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">
+                      Buku / Kitab (Jamak: كُتُبٌ)
+                    </p>
+                  </div>
+                </div>
+                <span className="font-arabic text-xl font-bold text-emerald-700 dark:text-emerald-300" dir="rtl">
+                  كِتَابٌ
                 </span>
               </div>
             </div>
 
-            {/* Action pill */}
+            {/* Action & metric row */}
             <div className="flex items-center justify-between text-[11px] text-zinc-400 pt-1">
-              <span>Kecepatan Eksekusi: &lt; 2ms</span>
-              <span className="font-mono text-cyan-400 font-semibold">RegEx Unicode Ready</span>
+              <span>Game: Susun Huruf &amp; Pasang Kata</span>
+              <span className="font-mono text-emerald-400 font-semibold">
+                Web Speech TTS Ready
+              </span>
             </div>
           </div>
         );

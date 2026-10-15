@@ -288,6 +288,55 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab (Angka
 
   projects: [
     {
+      id: "kalam-playground",
+      title: "Kalam Playground (كَلَامٌ)",
+      tagline: "Aplikasi Web Interaktif & Adaptif Pembelajaran Mufradat Bahasa Arab",
+      category: "EdTech",
+      description:
+        "Aplikasi web edukasi interaktif dan adaptif untuk pembelajaran mufradat bahasa Arab yang ramah untuk segala usia, dilengkapi kuis gamifikasi, teks bacaan klik-kata, dan sistem level adaptif berbasis kemampuan riil pembelajar.",
+      problem:
+        "Banyak pembelajar bahasa Arab mandiri dan siswa madrasah kesulitan mengukur level kemampuan awal, cepat jenuh dengan hafalan teks statis di buku konvensional, serta kekurangan media bacaan digital yang menyajikan penjelasan morfologi kata secara cepat dan komprehensif.",
+      solution:
+        "Membangun platform pembelajaran adaptif berbasis React 19 & Vite dengan Placement Test otomatis, 3 mode permainan (Kuis Bergambar, Pasangkan Kata, Susun Huruf RTL), teks bacaan interaktif dengan sistem klik kata (arti, syarah bahasa Arab, akar kata 3 huruf/jazr, bentuk jamak), dan native TTS audio.",
+      techStack: [
+        "React 19",
+        "Vite",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Web Speech API",
+        "Web Audio API",
+        "Bun",
+      ],
+      liveUrl: "https://github.com/adehalim/kalam-Playground",
+      githubUrl: "https://github.com/adehalim/kalam-Playground",
+      featured: true,
+      metrics: "5 Level Adaptif • Placement Test • Native Arabic TTS",
+      overview:
+        "Kalam Playground dirancang khusus untuk memadukan prinsip pedagogi bahasa Arab modern dengan arsitektur web interaktif yang ringan dan berkinerja tinggi. Pembelajar dapat menguji kemampuannya lewat Placement Test, memainkan aneka game kosakata, dan menelaah teks bacaan bertingkat secara mendalam.",
+      architecture: [
+        "State Management adaptif untuk alur Placement Test dan evaluasi skor real-time",
+        "Web Speech API (SpeechSynthesis) dengan pengaturan kecepatan bicara (0.6x - 1.2x) untuk pelafalan makhraj fasih",
+        "Synthesizer efek suara interaktif berbasis Web Audio API tanpa dependensi file audio eksternal",
+        "Komponen RTL Susun Huruf & Pasangkan Kata interaktif dengan animasi confetti",
+        "Engine Klik Kata Bacaan untuk menampilkan syarah Arabiyyah, akar kata 3 huruf (Al-Jazr), dan bentuk jamak secara instan",
+      ],
+      keyChallenges: [
+        "Menjaga konsistensi input huruf Arab bersambung dari kanan ke kiri (RTL) pada berbagai perangkat seluler",
+        "Mengoptimalkan bundle size dan kecepatan inisialisasi aplikasi menggunakan Vite 8 dan Bun runtime",
+      ],
+      features: [
+        "Permainan Mufradat Interaktif (Kuis Bergambar, Pasangkan Kata, Susun Huruf Arab RTL)",
+        "Teks Bacaan Klik Kata (Arti, Syarah Arabiyyah, Klasifikasi Isim/Fi'il/Harf, Al-Jazr)",
+        "Sistem Level Adaptif 1–5 dengan Adaptive Placement Test instan",
+        "Bank Kosakata & Flashcard Tematik (Sehari-hari, Sekolah, Ibadah, Makanan)",
+        "Audio Native TTS & Toggle Harakat Penuh (مُشَكَّلٌ) vs Gundul",
+      ],
+      impact: [
+        "Memberikan solusi nyata belajar bahasa Arab yang menyenangkan dan dapat diakses fleksibel oleh siswa maupun masyarakat umum",
+        "Membuktikan potensi penggabungan kurikulum bahasa Arab dengan teknologi web interaktif modern",
+      ],
+    },
+    {
       id: "mufrodat-explorer",
       title: "Mufrodat Explorer",
       tagline: "Media Pembelajaran Interaktif Kosakata Bahasa Arab",
@@ -299,8 +348,8 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab (Angka
       solution:
         "Membangun web app interaktif dengan kartu kosakata tematik, pemutar suara makhraj, kuis gamifikasi mini, dan penanda progres belajar siswa secara visual.",
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Web Audio API", "Lucide React"],
-      liveUrl: "https://github.com/adehalim",
-      githubUrl: "https://github.com/adehalim",
+      liveUrl: "https://github.com/adehalim/Portofolio",
+      githubUrl: "https://github.com/adehalim/Portofolio",
       featured: true,
       metrics: "Telah diujicobakan pada siswa MTsN 2 Solok",
       overview:
@@ -338,8 +387,8 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab (Angka
       solution:
         "Merancang antarmuka satu pintu (single-hub) yang menampilkan timeline event aktif, formulir registrasi digital terverifikasi, serta transparansi agenda DEMA.",
       techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Lucide Icons"],
-      liveUrl: "https://github.com/adehalim",
-      githubUrl: "https://github.com/adehalim",
+      liveUrl: "https://github.com/adehalim/Portofolio",
+      githubUrl: "https://github.com/adehalim/Portofolio",
       featured: true,
       metrics: "Memangkas waktu koordinasi info acara hingga 50%",
       overview:
@@ -363,45 +412,6 @@ Saat ini saya menempuh semester 7 di Program Studi Pendidikan Bahasa Arab (Angka
       impact: [
         "Mengeliminasi kebingungan mahasiswa mencari tautan pendaftaran",
         "Meningkatkan efisiensi kerja tim publikasi dan dokumentasi ormawa",
-      ],
-    },
-    {
-      id: "kalam-tech-sandbox",
-      title: "Kalam Tech Sandbox",
-      tagline: "Arabic Web Typography & Interactive Transliteration Tools",
-      category: "Tools",
-      description:
-        "Koleksi utilitas berbasis web untuk manipulasi teks bahasa Arab: pembersih harakat otomatis, penghitung kepadatan vokal, dan konverter transliterasi standar ke aksara Arab.",
-      problem:
-        "Pendidik dan mahasiswa kerap membutuhkan alat konversi cepat di peramban yang mendukung tata letak teks kanan-ke-kiri (RTL) secara sempurna tanpa gangguan reload halaman.",
-      solution:
-        "Menyediakan utilitas ringan dengan antarmuka responsif tanpa reload, memungkinkan salin instan, pembersihan format harakat otomatis, dan analisis fonetik dasar.",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS", "Regular Expressions Unicode", "Web API"],
-      liveUrl: "https://github.com/adehalim",
-      githubUrl: "https://github.com/adehalim",
-      featured: true,
-      metrics: "Mendukung input RTL responsif & instan copy 1-klik",
-      overview:
-        "Eksplorasi mendalam perlakuan Unicode karakter Arab (U+0600 hingga U+06FF) dalam peramban web modern, memastikan pemisahan tanda baca dan diakritik harakat secara matematis tepat.",
-      architecture: [
-        "Unicode Tashkeel Stripper berbasis RegEx kompilasi efisien",
-        "Kalkulator statistik rasio harakat terhadap konsonan",
-        "Dukungan dynamic text direction detection (LTR/RTL switch otomatis)",
-        "Clipboard API integration dengan visual feedback instan",
-      ],
-      keyChallenges: [
-        "Menangani ligatur tulisan Arab klasik tanpa merusak rendering font browser",
-        "Memastikan performa pembersihan teks tetap 60fps untuk dokumen teks panjang",
-      ],
-      features: [
-        "1-Click Strip Harakat (Tashkeel Remover)",
-        "Penghitung Huruf & Harakat Real-time",
-        "Papan Uji Tipografi Arab (Amiri, Noto Naskh, Scheherazade)",
-        "Salin Teks Bersih dalam hitungan milidetik",
-      ],
-      impact: [
-        "Membantu mahasiswa PBA mempercepat penyiapan modul ajar tanpa harakat",
-        "Menjadi modul dasar untuk integrasi platform pembelajaran bahasa Arab yang lebih besar",
       ],
     },
   ] as Project[],
